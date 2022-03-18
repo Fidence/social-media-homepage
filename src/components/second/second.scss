@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "../home/variables";
+.second{
+    flex: 5.5;
+    padding: 7px;
+    font-family: $font;
+    width: 100%;
+    // height: calc(100vh - 50px);
+  
+  
+    
+
+    .second_1{
+        margin: 3%;
+        padding: 20px;
+        width: 98%;
+        height: 180px;
+       border-radius: 10px;
+        box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.1);
+
+        .second_2{
+            display: flex;
+            align-items: center;
+           
+           
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            input{
+                font-size: 14px;
+                width: 70%;
+                border: none;
+                margin-left: 3%;
+            }
+            input:focus{
+                outline: none;
+                
+            }
+        }
+        .line1{
+            margin: 20px 0;
+        }
+        .second_icons{
+            
+            display: flex;
+            align-items: center;
+            
+
+            .iconlist{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .icon{
+                    margin-left:10px;
+                    font-size: 18px;
+                }
+                .second_txt{
+                    margin-left:5px;
+                      font-size: 14px;
+                      font-weight: 600;
+
+                }
+                
+            }
+        }
+       .secondbtn{
+            border: none;
+            background-color: green;
+            margin-left: 20%;
+            padding: 7px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: 500;
+           
+       
+        }
+
+    }
+
+    .post{
+        font-family: $font;
+        width: 98%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.1);
+        margin: 3%;
+        .post_main{
+            padding: 10px;
+            .post_top{
+                
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .post_toptxt{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .username{
+                        margin:0 10px;
+                        font-size: 14.5px;
+                        font-weight: 500;
+                    }
+                    .time{
+                        font-size: 12px;
+                    } 
+                }
+            }
+            .post_center{
+                .centertxt{
+                    font-size: 14px;
+                }
+                img{
+                  width: 100%;
+                  height: 400px; 
+                  object-fit: cover; 
+                }
+
+            }
+            .post_bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // margin: 0;
+                .bottomimg{
+                    display: flex;
+                    align-items: center;
+
+                    .bottomimg1{
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                    .bottomimg2{
+                        width: 24px;
+                        height: 24px;
+                        margin: 0 5px;
+                        cursor: pointer;
+                    }
+                    .liked{
+                        font-size: 14px;
+                    }
+                    
+                }
+                .comment{
+                    .comments{
+                        font-size:13px;
+                    }   
+
+                    
+                }
+               
+            }
+            
+            
+        }
+    }
+}
+

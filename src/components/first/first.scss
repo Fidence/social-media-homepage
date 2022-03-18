@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "../home/variables";
+
+.first{
+   position: sticky;
+   top: 60px;
+    height: calc(100vh - 60px);
+    font-family:$font;
+    font-size: 16px;
+    flex: 3;
+    overflow-y: scroll;
+    
+   
+    .first_container{
+     
+        padding: 10%;  
+        .first_list{
+            list-style: none;
+            margin: 0;
+
+            .first_item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 6%;
+
+                .itemtxt{
+                    margin-left: 5%;
+                }
+            }  
+        }
+        .btn1{
+            border: none;
+            width: 50%;
+            padding: 10px;
+            border-radius: 3px;
+            font-weight: 600;
+            
+        }  
+        .line{
+            margin: 5% 0;
+        }
+        .friends{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .friendlist{
+                display: flex;
+                align-items: center;
+                margin-bottom: 3%;
+                img{
+                    object-fit: contain;
+                    width: 10%;
+                    height: 10%;
+                    border-radius: 50%;
+                }
+                .friendname{
+                    font-size: 14px;
+                    margin-left: 5%;
+                }
+            }
+        }
+
+    
+    }
+}
+ 
