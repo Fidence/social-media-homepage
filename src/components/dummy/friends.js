@@ -1,12 +1,36 @@
-const students = [
+import img from "./pics"
+
+export const Friends = [
   {
     id: 1,
-    fullName: "Pierce Van Baaren",
-    email: "pvan0@washington.edu",
-    gender: "Male",
-    stateOfOrigin: "Beyelsa State",
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
   },
-  ,
+  {
+    id: 2,
+    username: "Pierce Van Baaren",
+  img:img.Img1,
+    
+  },
+  {
+    id: 3,
+    userName: "Pierce Van Baaren",
+    img:img.Img1,
+  },
+  {
+    id: 4,
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
+  },
+  {
+    id: 5,
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
+  },
+ 
 ];
 
-export default students;
+

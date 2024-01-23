@@ -10,10 +10,13 @@ import Tong from "../Assets/tong.webp"
 import Like from "../Assets/like.png"
 import Heart from "../Assets/heart.png"
 import { useState } from 'react';
+import { userPosts } from '../dummy/post';
+import {Friends} from "../dummy/friends"
 
 
 const Second = () => {
-const [like, setLike] = useState(10)
+ 
+const [like, setLike] = useState(userPosts.like)
 
 const increase = () =>{
   setLike(like+1)
@@ -54,14 +57,16 @@ const decrease = () =>{
           <button className="secondbtn">Share</button>
         </div>
       </div>
+{
+  userPosts.map((post)=>(
 
       <div className="post">
         <div className="post_main">
           <div className="post_top">
             <div className="post_toptxt">
-              <img src={Image4} alt="" />
-              <span className="username">Favour Moses</span>
-              <span className="time">7 mins ago</span>
+              {/* <img src={Friends.filter((f)=>f.id === post?.userId)[0].img} alt="" />
+              <span className="username">{Friends.filter((f)=>f.id === post?.userId)[0].usermame}</span> */}
+              <span className="time">{post.time}</span>
             </div>
 
             <div className="post_topicon">
@@ -70,163 +75,41 @@ const decrease = () =>{
           </div>
 
           <div className="post_center">
-            <span className="centertxt">你好，这个 是 我 第一的 发贴 :)</span>
-            <img src={Resturant} alt="" />
+            <span className="centertxt">{post.desc}:)</span>
+            <img src={post.photo} alt="" />
           </div>
 
           <div className="post_bottom">
             <div className="bottomimg">
               <img onClick={increase} src={Like} className="bottomimg1" alt="" />
               <img onClick={decrease} src={Heart} className="bottomimg2" alt="" />
-              <span className="liked">{like} people like it</span>
+              <span className="liked">{post.like} people like it</span>
             </div>
 
             <div className="comment">
-              <span className="comments">7 Comments</span>
+              <span className="comments">{post.comment} Comments</span>
             </div>
           </div>
         </div>
       </div>
+  ))
+}
 
       {/* second post */}
 
-      <div className="post">
-        <div className="post_main">
-          <div className="post_top">
-            <div className="post_toptxt">
-              <img src={Image4} alt="" />
-              <span className="username">Favour Moses</span>
-              <span className="time">7 mins ago</span>
-            </div>
-
-            <div className="post_topicon">
-              <MoreVert />
-            </div>
-          </div>
-
-          <div className="post_center">
-            <span className="centertxt">你好，这个 是 我 第一的 发贴 :)</span>
-            <img src={Rainway} alt="" />
-          </div>
-
-          <div className="post_bottom">
-            <div className="bottomimg">
-              <img onClick={Like} src={Like} className="bottomimg1" alt="" />
-              <img src={Heart} className="bottomimg2" alt="" />
-              <span className="liked">30 people like it</span>
-            </div>
-
-            <div className="comment">
-              <span className="comments">7 Comments</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       {/* thirth post */}
 
-      <div className="post">
-        <div className="post_main">
-          <div className="post_top">
-            <div className="post_toptxt">
-              <img src={Image4} alt="" />
-              <span className="username">Favour Moses</span>
-              <span className="time">7 mins ago</span>
-            </div>
-
-            <div className="post_topicon">
-              <MoreVert />
-            </div>
-          </div>
-
-          <div className="post_center">
-            <span className="centertxt">你好，这个 是 我 第一的 发贴 :)</span>
-            <img src={Orange} alt="" />
-          </div>
-
-          <div className="post_bottom">
-            <div className="bottomimg">
-              <img src={Like} className="bottomimg1" alt="" />
-              <img src={Heart} className="bottomimg2" alt="" />
-              <span className="liked">30 people like it</span>
-            </div>
-
-            <div className="comment">
-              <span className="comments">7 Comments</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       {/* fourth post */}
 
-      <div className="post">
-        <div className="post_main">
-          <div className="post_top">
-            <div className="post_toptxt">
-              <img src={Image4} alt="" />
-              <span className="username">Favour Moses</span>
-              <span className="time">7 mins ago</span>
-            </div>
-
-            <div className="post_topicon">
-              <MoreVert />
-            </div>
-          </div>
-
-          <div className="post_center">
-            <span className="centertxt">你好，这个 是 我 第一的 发贴 :)</span>
-            <img src={Tong} alt="" />
-          </div>
-
-          <div className="post_bottom">
-            <div className="bottomimg">
-              <img onClick={increase} src={Like} className="bottomimg1" alt="" />
-              <img src={Heart} className="bottomimg2" alt="" />
-              <span className="liked">{like} people like it</span>
-            </div>
-
-            <div className="comment">
-              <span className="comments">7 Comments</span>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
       {/* fifth post */}
 
-      <div className="post">
-        <div className="post_main">
-          <div className="post_top">
-            <div className="post_toptxt">
-              <img src={Image4} alt="" />
-              <span className="username">Favour Moses</span>
-              <span className="time">7 mins ago</span>
-            </div>
-
-            <div className="post_topicon">
-              <MoreVert />
-            </div>
-          </div>
-
-          <div className="post_center">
-            <span className="centertxt">你好，这个 是 我 第一的 发贴 :)</span>
-            <img src={Shoe} alt="" />
-          </div>
-
-          <div className="post_bottom">
-            <div className="bottomimg">
-              <img src={Like} className="bottomimg1" alt="" />
-              <img src={Heart} className="bottomimg2" alt="" />
-              <span className="liked">30 people like it</span>
-            </div>
-
-            <div className="comment">
-              <span className="comments">7 Comments</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

@@ -19,7 +19,7 @@ function Topbar() {
 
       <div className="topbar_right">
         <div className="topbar_list">
-          <li>Homepage</li>
+          <li><Link to="/">Homepage</Link></li>
           <li>Timeline</li>
         </div>
 
