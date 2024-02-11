@@ -21,8 +21,8 @@
       align-items: center;
 
       img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         object-fit: cover;
       }
@@ -47,6 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        cursor: pointer;
 
         .icon {
           margin-left: 10px;
@@ -67,6 +68,7 @@
       border-radius: 5px;
       color: #ffffff;
       font-weight: 500;
+       cursor: pointer;
     }
   }
 
@@ -112,11 +114,14 @@
           object-fit: cover;
         }
       }
+      .post_topicon{
+         cursor: pointer;
+      }
       .post_bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // margin: 0;
+       
         .bottomimg {
           display: flex;
           align-items: center;

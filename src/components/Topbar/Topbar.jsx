@@ -11,10 +11,10 @@ function Topbar() {
         <h3>Fidence</h3>
       </div>
       <div className="topbar_center">
-        <div className="search">
-          <Search className="search_icon" />
+        <form className="search">
           <input type="text" placeholder="search for friends, post or video" />
-        </div>
+          <button><Search className="search_icon" /></button>
+        </form>
       </div>
 
       <div className="topbar_right">
