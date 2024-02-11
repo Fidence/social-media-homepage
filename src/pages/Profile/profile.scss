@@ -1,0 +1,55 @@
+@import "../home/variables";
+.profile {
+  &-container {
+    display: flex;
+
+    &-right {
+      flex: 9;
+      &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        .img-cover {
+          position: relative;
+          width: 100%;
+          height: 25rem;
+          .profile-img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+          }
+          .profile-img2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid white;
+            position: absolute;
+            top: 50%;
+            margin: auto;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+      .greetings {
+        margin-left: 2rem;
+        h6 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-family: $font;
+        }
+        span {
+          font-size: 1.3rem;
+          font-weight: 500;
+          font-family: $font;
+        }
+      }
+      &-buttom {
+        display: flex;
+      }
+    }
+  }
+}

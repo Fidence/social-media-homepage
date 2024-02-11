@@ -1,114 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import "../home/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "../../pages/home/variables";
 
-.topbar{
-    font-family: $font;
-    width: 100%;
-    height: 60px;
-    background-color: #1877f2;
+.topbar {
+  font-family: $font;
+  width: 100%;
+  height: 60px;
+  background-color: #de03e6;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .topbar_left {
+    flex: 3;
+    h3 {
+      color: #ffffff;
+      font-size: 26px;
+      letter-spacing: 0.9px;
+      margin-left: 15%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .topbar_center {
+    flex: 4;
+
+    .search {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      background-color: #ffffff;
+      border-radius: 30px;
+
+      .search_icon {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      input {
+        width: 80%;
+        border: none;
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+  .topbar_right {
+    flex: 5;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    justify-content: space-evenly;
 
-    .topbar_left{
-        flex: 3;
-        h3{
-            color: #ffffff;
-            font-size: 26px;
-            letter-spacing:0.9px;
-            margin-left: 15%;
-            font-weight: bold;
-            cursor: pointer;
-        }
+    .topbar_list {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 10px;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+        cursor: pointer;
+      }
     }
-    .topbar_center{
-        flex: 4;
+    .topbar_icons {
+      display: flex;
+      color: #ffffff;
+      cursor: pointer;
 
-        .search{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 30px;
-            background-color: #ffffff;
-            border-radius: 30px;
+      .personicon {
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
 
-            .search_icon{
-                font-size: 20px ;
-                cursor: pointer;
-
-            }
-            input{
-                width: 80%;
-                border: none;
-            }
-            input:focus{
-                outline: none;
-            }
+        .badge {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: red;
+          color: #ffffff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          top: -15%;
+          right: -15%;
+          font-size: 11px;
         }
-
+      }
     }
-    .topbar_right{
-        flex: 5;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
 
-        .topbar_list{
-            display: flex;
-            align-items: center;
-
-            li{
-                margin-left: 10px;
-                list-style: none;
-                font-size: 14px;
-                font-weight: 500;
-                color: #ffffff;
-                cursor: pointer;
-            }
-
-        }
-        .topbar_icons{
-            display: flex;
-            color: #ffffff;
-            cursor: pointer;
-
-            .personicon{
-                position: relative;
-                margin-right: 10px;
-                cursor: pointer;
-
-                .badge{
-                    position: absolute;
-                    width: 15px;
-                    height: 15px;
-                    background-color: red;
-                    color: #ffffff;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    justify-content: center;
-                    top: -15%;
-                    right: -15%;
-                    font-size: 14px;
-                    
-                }
-            }
-        }
-
-        .topbar_img{
-            width: 40px;
-            height: 40px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-            }
-        }
-
+    .topbar_img {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
     }
-    
+  }
 }

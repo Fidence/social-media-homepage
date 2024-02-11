@@ -1,7 +1,8 @@
-import React from 'react'
-import "./topbar.scss"
-import {Search, Person, Chat, Notifications} from "@material-ui/icons"
-import Image4 from "../Assets/image4.jpg"
+import React from "react";
+import "./topbar.scss";
+import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import Image4 from "../Assets/image4.jpg";
+import { Link } from "react-router-dom";
 
 function Topbar() {
   return (
@@ -11,14 +12,14 @@ function Topbar() {
       </div>
       <div className="topbar_center">
         <div className="search">
-          <Search className='search_icon'/>
+          <Search className="search_icon" />
           <input type="text" placeholder="search for friends, post or video" />
         </div>
       </div>
 
       <div className="topbar_right">
         <div className="topbar_list">
-          <li>Homepage</li>
+          <li><Link to="/">Homepage</Link></li>
           <li>Timeline</li>
         </div>
 
@@ -37,11 +38,14 @@ function Topbar() {
           </div>
         </div>
         <div className="topbar_img">
-          <img src={Image4} alt="" />
+          <Link to="/profile">
+            {" "}
+            <img src={Image4} alt="" />
+          </Link>
         </div>
       </div>
     </div>
   );
 }
 
-export default Topbar
+export default Topbar;

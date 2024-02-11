@@ -1,144 +1,36 @@
-const students = [
+import img from "./pics"
+
+export const Friends = [
   {
     id: 1,
-    fullName: "Pierce Van Baaren",
-    email: "pvan0@washington.edu",
-    gender: "Male",
-    stateOfOrigin: "Beyelsa State",
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
   },
   {
     id: 2,
-    fullName: "Mel Gain",
-    email: "mgain1@ustream.tv",
-    gender: "Male",
-    stateOfOrigin: "Delta State",
+    username: "Pierce Van Baaren",
+  img:img.Img1,
+    
   },
   {
     id: 3,
-    fullName: "Matthiew Musa",
-    email: "mgarmon2@myspace.com",
-    gender: "Male",
-    stateOfOrigin: "kano",
+    userName: "Pierce Van Baaren",
+    img:img.Img1,
   },
   {
     id: 4,
-    fullName: "Muhamend Aluard",
-    email: "laluard3@reverbnation.com",
-    gender: "Male",
-    stateOfOrigin: "Kaduna",
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
   },
   {
     id: 5,
-    fullName: "Sawyere Jesteco",
-    email: "sjesteco4@wp.com",
-    gender: "Male",
-    stateOfOrigin: "New York",
+    username: "Pierce Van Baaren",
+    img:img.Img1,
+    
   },
-  {
-    id: 6,
-    fullName: "Jacquelynn Jacques",
-    email: "jjacques5@yahoo.co.jp",
-    gender: "Male",
-    stateOfOrigin: "New York",
-  },
-  {
-    id: 7,
-    fullName: "Fakorede Skey",
-    email: "fakorede6@oakley.com",
-    gender: "Female",
-    stateOfOrigin: "Lagos",
-  },
-  {
-    id: 8,
-    fullName: "Thatcher Milan",
-    email: "tmilan7@netlog.com",
-    gender: "Male",
-    stateOfOrigin: "Kastina",
-  },
-  {
-    id: 9,
-    fullName: "Ayo Yomide",
-    email: "ayoyomide6@sbwire.com",
-    gender: "Male",
-    stateOfOrigin: "Ekiti",
-  },
-  {
-    id: 10,
-    fullName: "Alyssa Fido",
-    email: "afido9@umn.edu",
-    gender: "Male",
-    stateOfOrigin: "New York",
-  },
-  {
-    id: 11,
-    fullName: "Lee Xiaomi",
-    email: "Xiaomi@state.gov",
-    gender: "Male",
-    stateOfOrigin: "China",
-  },
-  {
-    id: 12,
-    fullName: "Tessie Healeas",
-    email: "thealeasb@freewebs.com",
-    gender: "Male",
-    stateOfOrigin: "Provincie Gelderland",
-  },
-  {
-    id: 13,
-    fullName: "Leroy McUre",
-    email: "lmcurec@etsy.com",
-    gender: "Male",
-    stateOfOrigin: "New York",
-  },
-  {
-    id: 14,
-    fullName: "Tremain Coatts",
-    email: "tcoattsd@dell.com",
-    gender: "Female",
-    stateOfOrigin: "Akwa-ibom State",
-  },
-  {
-    id: 15,
-    fullName: "Xerxes Kyllford",
-    email: "xkyllforde@mail.ru",
-    gender: "Female",
-    stateOfOrigin: "Rivers State",
-  },
-  {
-    id: 16,
-    fullName: "Corney Szimoni",
-    email: "cszimonif@paginegialle.it",
-    gender: "Female",
-    stateOfOrigin: "Delta State",
-  },
-  {
-    id: 17,
-    fullName: "Elinor Ethridge",
-    email: "eethridgeg@washingtonpost.com",
-    gender: "Male",
-    stateOfOrigin: "Abia State",
-  },
-  {
-    id: 18,
-    fullName: "Addy Thomazet",
-    email: "athomazeth@posterous.com",
-    gender: "Male",
-    stateOfOrigin: "Rivers State",
-  },
-  {
-    id: 19,
-    fullName: "Lolita Serck",
-    email: "lsercki@networksolutions.com",
-    gender: "Female",
-    stateOfOrigin: "Imo State",
-  },
-  {
-    id: 19,
-    fullName: "Lolita Serck",
-    email: "lsercki@networksolutions.com",
-    gender: "Female",
-    stateOfOrigin: "Imo State",
-  },
+ 
 ];
 
-export default students;
+
