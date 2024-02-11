@@ -1,6 +1,6 @@
 import React from 'react'
 import "./first.scss"
-import Image3 from "../Assets/image3.jpg"
+import { Friends } from '../dummy/friends'
 import {RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event, School } from "@material-ui/icons";
 
 const First = () => {
@@ -48,46 +48,16 @@ const First = () => {
         <button className="btn1">Show More</button>
         <hr className="line" />
         <ul className="friends">
+          {Friends.map((Friend)=>
           <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Odukwu peace</span>
+            <img src={Friend.img} alt="" />
+            <span className="friendname">{Friend.username}</span>
           </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
-          <li className="friendlist">
-            <img src={Image3} alt="" />
-            <span className="friendname">Moses Grace</span>
-          </li>
+           )}
         </ul>
       </div>
     </div>
   );
 }
 
-export default First
+export default First;
